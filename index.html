@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Blog de Pedro Tellez Cediel</title>
+        <!-- Ruta relativa -->
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>Blog Técnico de Pedro Tellez Cediel</h1>
+            <nav class="nav-buttons">
+                <a href="/" class="btn btn-home active" aria-current="page">Inicio</a>
+                <a href="/about.html" class="btn btn-about">Acerca de</a>
+                <a href="/blog/" class="btn btn-blog">Blog</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">Publicaciones Recientes</h2>
+        <div class="posts-grid">
+            <article class="post-card">
+                <h3><a href="/blog/01-arquitectura-de-software-introduccion.html">¿Qué es la Arquitectura de Software?</a></h3>
+                <p>Una introducción a la arquitectura de software, sus objetivos, componentes y su impacto en escalabilidad, mantenibilidad y rendimiento.</p>
+            </article>
+            <article class="post-card">
+                <h3><a href="/blog/02-arquitectura-de-software-patrones.html">Estilos Arquitectónicos más utilizados</a></h3>
+                <p>Comparación de arquitecturas: Monolítica, en Capas, Cliente-Servidor, MVC y Microservicios.</p>
+            </article>
+            <article class="post-card">
+                <h3><a href="/blog/03-arquitectura-de-software-microservicios.html">Patrones Arquitectónicos Modernos</a></h3>
+                <p>Clean Architecture, Arquitectura Hexagonal y CQRS: ventajas, desventajas y casos de uso.</p>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year">2025</span> Pedro Tellez Cediel. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script>
+        // Actualiza el año automáticamente
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
